@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Leadership Kaleidoscope | Leadership Training and Coaching</title>
+  <meta id="metaDescription" name="description" content="Leadership development for Midwest organizations. We start with discovery to identify what will benefit your organization most, then design coaching, training, and team development that fits your business stage." />
+  <meta name="keywords" content="midwest leadership training, leadership development midwest, corporate leadership training midwest, leadership coaching for managers, management training for small business, team development workshops, executive coaching midwest, leadership workshops, conflict resolution training, customized leadership development" />
+
+  <meta property="og:title" content="Leadership Kaleidoscope | Leadership Training and Coaching" />
+  <meta property="og:description" content="We do not start with a pre-set program. We start with discovery, then design leadership development that fits your organization." />
+  <meta property="og:type" content="website" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    :root {
+      --primary: #09132a;
+      --secondary: #d6b15a;
+      --ink: #0b1220;
+      --muted: #5a6475;
+      --bg-soft: #f6f8fc;
+    }
+
+    body { color: var(--ink); }
+
+    .bg-primary-custom { background: var(--primary) !important; }
+    .text-primary-custom { color: var(--primary) !important; }
+    .bg-secondary-custom { background: var(--secondary) !important; }
+    .text-secondary-custom { color: var(--secondary) !important; }
+
+    .btn-primary-custom {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .btn-primary-custom:hover,
+    .btn-primary-custom:focus {
+      background: #061f55;
+      border-color: #061f55;
+      color: #fff;
+    }
+
+    .btn-outline-primary-custom {
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    .btn-outline-primary-custom:hover,
+    .btn-outline-primary-custom:focus {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-secondary-custom {
+      background: var(--secondary);
+      border-color: var(--secondary);
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .btn-secondary-custom:hover,
+    .btn-secondary-custom:focus {
+      background: #caa34f;
+      border-color: #caa34f;
+      color: var(--primary);
+    }
+
+    .hero {
+      /* Royalty-free image source: Unsplash (free under Unsplash License).
+         https://unsplash.com/photos/7mgkmRY4ZLM */
+      background:
+        linear-gradient(180deg, rgba(9, 19, 42, 0.78) 0%, rgba(9, 19, 42, 0.90) 100%),
+        url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+      color: #fff;
+    }
+
+    .hero .lead { color: rgba(255,255,255,0.88); }
+
+    .section { padding: 5rem 0; }
+    .section-soft { background: var(--bg-soft); }
+
+    .col-bg {
+      border-radius: 1rem;
+      min-height: 620px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 10px 30px rgba(8, 18, 40, 0.06);
+      overflow: hidden;
+      position: relative;
+    }
+    .col-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(9, 19, 42, 0.00) 0%, rgba(9, 19, 42, 0.15) 100%);
+    }
+
+    .card { border: 0; box-shadow: 0 10px 30px rgba(8, 18, 40, 0.06); border-radius: 1rem; }
+    .badge-soft {
+      background: rgba(8, 39, 105, 0.08);
+      color: var(--primary);
+      border: 1px solid rgba(8, 39, 105, 0.15);
+    }
+
+    .icon-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      display: inline-block;
+      background: var(--secondary);
+      margin-right: 0.6rem;
+      transform: translateY(-1px);
+    }
+
+    .nav-link { font-weight: 600; }
+
+    /* Navbar is white, so use primary for links and a clear active state. */
+    .navbar .nav-link { color: var(--primary); }
+    .navbar .nav-link:hover { color: #061f55; }
+    .navbar .nav-link.active {
+      color: var(--primary) !important;
+      position: relative;
+    }
+    .navbar .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      height: 3px;
+      background: var(--secondary);
+      border-radius: 999px;
+    }
+
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.9);
+    }
+
+    .small-muted { color: var(--muted); }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #fff;
+      color: var(--primary);
+      padding: 0.5rem 0.75rem;
+      z-index: 9999;
+      border-radius: 0 0 0.5rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    .skip-link:focus { top: 0; }
+
+    [data-page] { display: none; }
+    [data-page].is-active { display: block; }
+
+    /* No ampersands in comments. */
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary-custom" href="#/home"><img src="images/kaleidoscope-log.webp" class="img-fluid" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" data-route="home" href="#/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-route="approach" href="#/approach">Approach</a></li>
+          <li class="nav-item"><a class="nav-link" data-route="contact" href="#/contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-secondary-custom ms-lg-3" href="#/contact">Schedule a discovery call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- PAGE: HOME -->
+    <div data-page="home" class="is-active">
+      <header class="hero">
+        <div class="container py-5">
+          <div class="row align-items-center g-4 py-4">
+            <div class="col-lg-7">
+              <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">Turning Insight into Impact.</span>
+              <h1 class="display-5 fw-bold">See Leadership Clearly. Develop with Purpose. Align for Impact.</h1>
+              <p class="lead mt-3">A comprehensive, data-informed leadership development process that integrates assessment, analysis, and targeted development to create clarity, alignment, and growth.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-secondary-custom btn-lg" href="#/contact">Schedule a consultation</a>
+                <a class="btn btn-outline-light btn-lg" href="#/approach">See how it works</a>
+              </div>
+              <p class="mt-3 mb-0" style="color: rgba(255,255,255,0.75)">Not a one-size-fits-all program. More than a needs assessment.</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="card p-4">
+                <h2 class="h5 fw-bold text-primary-custom mb-2">What discovery delivers</h2>
+                <p class="small-muted mb-3">Clarity on what matters most, plus a tailored recommendation built from real data and real feedback.</p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2"><span class="icon-dot"></span>Increase leadership self-awareness and effectiveness</li>
+                  <li class="mb-2"><span class="icon-dot"></span>Align leadership development with organizational priorities</li>
+                  <li class="mb-2"><span class="icon-dot"></span>Invest in training that directly addresses real needs</li>
+                  <li class="mb-2"><span class="icon-dot"></span>Strengthen leadership capacity at individual and enterprise levels</li>
+                </ul>
+                <a class="btn btn-primary-custom" href="#/contact">Start the discovery process</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-6 d-flex">
+              <div class="card p-4 p-lg-5 w-100">
+                <h2 class="fw-bold">More than a needs assessment</h2>
+                <p class="mt-3">Leadership Kaleidoscope combines individual insight with organizational insight, resulting in a customized leadership development approach tailored to your company’s needs.</p>
+                <p class="small-muted mb-0">We begin by gathering meaningful feedback and increasing self-awareness, then translate what we learn into a focused plan leaders can act on.</p>
+
+                <div class="row g-3 mt-4">
+                  <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 1</div>
+                      <h3 class="h5 fw-bold">Discover</h3>
+                      <p class="small-muted mb-0">We learn what is happening, what is working, and where leadership needs support.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 2</div>
+                      <h3 class="h5 fw-bold">Design</h3>
+                      <p class="small-muted mb-0">We build a customized plan aligned with your priorities and desired outcomes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 3</div>
+                      <h3 class="h5 fw-bold">Develop</h3>
+                      <p class="small-muted mb-0">We deliver coaching and training that drives measurable progress and momentum.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-primary-custom" href="#/contact">Schedule a discovery call</a>
+                  <a class="btn btn-outline-primary-custom" href="#/approach">Explore our approach</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="col-bg h-100" style="background-image: url('https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1600&q=80');" aria-label="Business meeting discussion"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="row g-4 align-items-stretch">
+
+            <div class="col-lg-6">
+              <div class="col-bg h-100" style="background-image: url('https://images.unsplash.com/photo-0QyWWUg0dL0?auto=format&fit=crop&w=1600&q=80');" aria-label="Business team brainstorming in office"></div>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+              <div class="w-100">
+                <h2 class="fw-bold">Turning insight into measurable impact</h2>
+                <p class="mt-3">Because the process is grounded in assessment and analysis, outcomes are specific, observable, and aligned with organizational priorities.</p>
+
+                <div class="row g-3 mt-4">
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <h3 class="h6 fw-bold text-primary-custom">Increased self-awareness</h3>
+                      <p class="small-muted mb-0">Leaders gain clarity about strengths, blind spots, and leadership impact.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <h3 class="h6 fw-bold text-primary-custom">Organizational alignment</h3>
+                      <p class="small-muted mb-0">Leadership development is directly connected to company priorities and strategic direction.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <h3 class="h6 fw-bold text-primary-custom">Targeted development</h3>
+                      <p class="small-muted mb-0">Training and coaching address real needs identified through data and feedback.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <h3 class="h6 fw-bold text-primary-custom">Enterprise-level growth</h3>
+                      <p class="small-muted mb-0">Leadership capacity is strengthened at both individual and enterprise levels.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-primary-custom" href="#/contact">Schedule a discovery call</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-9">
+              <div class="card p-4 p-lg-5">
+
+                <h2 class="fw-bold">Hey there, I’m Terri.</h2>
+                <p class="mt-3">I help leaders and teams get unstuck, gain clarity, and move forward with confidence.</p>
+
+                <p class="small-muted">Too often, leadership development starts with a pre-set solution instead of real clarity. I begin with assessment and insight, so every step forward is purposeful and aligned with what your organization needs most.</p>
+
+                <div class="row g-3 mt-4">
+                  <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                      <div class="text-secondary-custom fw-bold">John Maxwell Certified</div>
+                      <div class="small-muted">Certified Trainer and Coach (2023)</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                      <div class="text-secondary-custom fw-bold">Master’s in Communication</div>
+                      <div class="small-muted">Advanced expertise in leadership and organizational communication (2007)</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                      <div class="text-secondary-custom fw-bold">Conflict Mediation Certified</div>
+                      <div class="small-muted">Skilled in helping teams navigate tension with clarity (2005)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                  <a class="btn btn-secondary-custom" href="#/contact">Schedule a discovery call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="mb-4">
+            <h2 class="fw-bold mb-1">Where progress shows up</h2>
+            <p class="small-muted mb-0">A few tangible signs your leaders are seeing clearly and aligning for impact.</p>
+          </div>
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <div class="card h-100 p-3">
+                <img class="img-fluid rounded-4" style="aspect-ratio: 16 / 9; width: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80" alt="Handshake in a professional setting" loading="lazy" />
+                <div class="p-2">
+                  <div class="small text-uppercase small-muted mt-2">Trust</div>
+                  <div class="fw-bold">Build confident leaders</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 p-3">
+                <img class="img-fluid rounded-4" style="aspect-ratio: 16 / 9; width: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1600&q=80" alt="Training session and presentation" loading="lazy" />
+                <div class="p-2">
+                  <div class="small text-uppercase small-muted mt-2">Clarity</div>
+                  <div class="fw-bold">Align expectations and goals</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 p-3">
+                <img class="img-fluid rounded-4" style="aspect-ratio: 16 / 9; width: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Smiling team collaborating" loading="lazy" />
+                <div class="p-2">
+                  <div class="small text-uppercase small-muted mt-2">Momentum</div>
+                  <div class="fw-bold">Turn insight into action</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-4 p-lg-5 bg-primary-custom text-white">
+            <div class="row g-3 align-items-center">
+              <div class="col-lg-8">
+                <h2 class="fw-bold mb-2">Ready to transform your leadership perspective?</h2>
+                <p class="mb-0" style="color: rgba(255,255,255,0.88)">Start with discovery, and we will design the best possible solution for where you are right now.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-light btn-lg" href="#/contact">Schedule a consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE: APPROACH -->
+    <div data-page="approach">
+      <header class="hero">
+        <div class="container py-5">
+          <div class="row align-items-center g-4 py-4">
+            <div class="col-lg-8">
+              <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">Where Perspective Becomes Progress.</span>
+              <h1 class="display-6 fw-bold">See Leadership Clearly. Develop with Purpose. Align for Impact.</h1>
+              <p class="lead mt-3">A thoughtful, data-informed process that ensures leadership development is purposeful, targeted, and impactful—helping leaders and organizations see what matters most and act on it.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-secondary-custom btn-lg" href="#/contact">Schedule a consultation</a>
+                <a class="btn btn-outline-light btn-lg" href="#approach-details">Jump to the process</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="approach-details" class="section">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <h2 class="fw-bold">How we do it</h2>
+              <p class="mt-3">Just as a kaleidoscope reveals new patterns with each turn, our process helps leaders and teams see themselves and their organization from multiple perspectives, then act with clarity.</p>
+              <p class="small-muted mb-0">The Leadership Kaleidoscope Process is comprehensive and data-informed, integrating assessment, analysis, and targeted development to drive measurable outcomes.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card p-4 p-lg-5">
+                <h3 class="h6 fw-bold mb-3 text-primary-custom">The Leadership Kaleidoscope Process</h3>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 1</div>
+                      <h4 class="h5 fw-bold">Leadership Assessments</h4>
+                      <p class="small-muted mb-0">Increase self-awareness and gather meaningful feedback from key stakeholders.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 2</div>
+                      <h4 class="h5 fw-bold">Analysis and Insight</h4>
+                      <p class="small-muted mb-0">Identify patterns, themes, and priority development areas at individual and organizational levels.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 3</div>
+                      <h4 class="h5 fw-bold">Personal and Professional Development</h4>
+                      <p class="small-muted mb-0">Engage leaders in coaching, reflection, and skill-building aligned to the needs uncovered.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                      <div class="text-secondary-custom fw-bold mb-2">Step 4</div>
+                      <h4 class="h5 fw-bold">Strategic Recommendation</h4>
+                      <p class="small-muted mb-0">Present collective findings and a specialized training recommendation to address the organization’s priorities.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-primary-custom" href="#/contact">Schedule a discovery call</a>
+                  <a class="btn btn-outline-primary-custom" href="#services-list">See services</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="card overflow-hidden mb-3">
+                <img class="img-fluid" style="aspect-ratio: 16 / 9; width: 100%; object-fit: cover;" src="https://source.unsplash.com/0QyWWUg0dL0/1600x900" alt="Concentrated at work group of business people discussing brainstorming in office" loading="lazy" />
+              </div>
+              <h2 class="fw-bold">Turning insight into measurable impact</h2>
+              <p class="mt-3">Because the process is grounded in assessment and analysis, outcomes are specific, observable, and aligned with organizational priorities.</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="card h-100 p-4">
+                    <h3 class="h6 fw-bold text-primary-custom">Increased self-awareness</h3>
+                    <p class="small-muted mb-0">Leaders gain clarity about strengths, blind spots, and leadership impact.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 p-4">
+                    <h3 class="h6 fw-bold text-primary-custom">Organizational alignment</h3>
+                    <p class="small-muted mb-0">Leadership development is directly connected to company priorities and strategic direction.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 p-4">
+                    <h3 class="h6 fw-bold text-primary-custom">Targeted development</h3>
+                    <p class="small-muted mb-0">Training and coaching address real needs identified through data and feedback.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 p-4">
+                    <h3 class="h6 fw-bold text-primary-custom">Enterprise-level growth</h3>
+                    <p class="small-muted mb-0">Leadership capacity is strengthened at both individual and enterprise levels.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-primary-custom" href="#/contact">Schedule a discovery call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services-list" class="section">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div>
+              <h2 class="fw-bold mb-1">Services</h2>
+              <p class="small-muted mb-0">We recommend the right mix after discovery. You do not need to choose a service today.</p>
+            </div>
+            <a class="btn btn-secondary-custom" href="#/contact">Get a tailored recommendation</a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 p-4">
+                <h3 class="h5 fw-bold">Executive and leadership coaching</h3>
+                <p class="small-muted">One-on-one coaching for senior leaders and managers ready to elevate their impact.</p>
+                <ul class="small mb-0">
+                  <li>Strengthen leadership presence and communication</li>
+                  <li>Identify blind spots and accelerate growth</li>
+                  <li>Develop practical strategies for real challenges</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 p-4">
+                <h3 class="h5 fw-bold">Team development</h3>
+                <p class="small-muted">Improve alignment, accountability, collaboration, and conflict navigation.</p>
+                <ul class="small mb-0">
+                  <li>Facilitated workshops and team sessions</li>
+                  <li>Conflict resolution and communication tools</li>
+                  <li>Actionable next steps for immediate progress</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 p-4">
+                <h3 class="h5 fw-bold">Leadership workshops</h3>
+                <p class="small-muted">Interactive workshops for retreats, conferences, and internal development days.</p>
+                <ul class="small mb-0">
+                  <li>Half-day and full-day formats</li>
+                  <li>Engaging exercises and discussion</li>
+                  <li>Tools leaders can apply immediately</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+              <div class="card h-100 p-4">
+                <h3 class="h5 fw-bold">Multi-session training programs</h3>
+                <p class="small-muted">Structured development over time with real-world application between sessions.</p>
+                <ul class="small mb-0">
+                  <li>Customized curriculum mapped to goals</li>
+                  <li>Practical assignments and accountability</li>
+                  <li>Ongoing support and measurable progress</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+              <div class="card h-100 p-4">
+                <h3 class="h5 fw-bold">Mastermind groups</h3>
+                <p class="small-muted">Peer advisory groups for growth-minded leaders who want insight and accountability.</p>
+                <ul class="small mb-0">
+                  <li>Small, facilitated cohorts</li>
+                  <li>Shared learning and problem solving</li>
+                  <li>Support that keeps progress moving</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4 p-4">
+            <div class="row g-3 align-items-center">
+              <div class="col-lg-8">
+                <h3 class="h5 fw-bold mb-1">Not sure where to start?</h3>
+                <p class="small-muted mb-0">Start with discovery, and we will help you identify the most beneficial next steps.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-primary-custom" href="#/contact">Start with discovery</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4 p-4 p-lg-5 bg-primary-custom text-white">
+            <div class="row g-3 align-items-center">
+              <div class="col-lg-8">
+                <h2 class="fw-bold mb-2">Ready to get a tailored leadership plan?</h2>
+                <p class="mb-0" style="color: rgba(255,255,255,0.88)">Schedule a discovery call and we will design the best possible solution for where you are right now.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-light btn-lg" href="#/contact">Schedule a consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE: CONTACT -->
+    <div data-page="contact">
+      <header class="hero">
+        <div class="container py-5">
+          <div class="row align-items-center g-4 py-4">
+            <div class="col-lg-8">
+              <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">A New Perspective Starts Here.</span>
+              <h1 class="display-6 fw-bold">See what matters most and act on it.</h1>
+              <p class="lead mt-3">Begin with a complimentary 30-minute discovery call. We will explore your goals, discuss current leadership challenges, and determine whether a data-informed Leadership Kaleidoscope process is the right fit for your organization.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-secondary-custom btn-lg" href="#contact-form">Schedule a consultation</a>
+                <a class="btn btn-outline-light btn-lg" href="#what-to-expect">What to expect</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section" id="contact-form">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2 class="fw-bold">Start the conversation</h2>
+              <p class="mt-3">Share your goals, growth priorities, or leadership challenges. We will respond within 1 to 2 business days to schedule a discovery conversation and outline potential next steps.</p>
+
+              <div class="card p-4 mt-3" id="what-to-expect">
+                <h3 class="h6 fw-bold mb-2">What to expect</h3>
+                <ol class="small mb-0">
+                  <li>We respond within 1 to 2 business days</li>
+                  <li>We schedule a complimentary 30-minute discovery call</li>
+                  <li>We explore leadership assessments and feedback options</li>
+                  <li>If aligned, we outline a tailored process and strategic recommendation</li>
+                </ol>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card p-4">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" id="name" type="text" placeholder="Your name" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" type="email" placeholder="name@company.com" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="company">Company (optional)</label>
+                    <input class="form-control" id="company" type="text" placeholder="Company name" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Tell us what you are hoping to improve."></textarea>
+                  </div>
+                  <button class="btn btn-secondary-custom w-100" type="button">Send message</button>
+                  <p class="small-muted mt-3 mb-0">Email: terri@leadershipkaleidoscope.com</p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4 p-4 p-lg-5 bg-primary-custom text-white">
+            <div class="row g-3 align-items-center">
+              <div class="col-lg-8">
+                <h2 class="fw-bold mb-2">Prefer to start with a conversation?</h2>
+                <p class="mb-0" style="color: rgba(255,255,255,0.88)">Schedule a consultation and we will guide you through discovery and next steps.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-light btn-lg" href="#contact-form">Schedule a consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="rounded-4 d-inline-flex align-items-center justify-content-center" style="width: 46px; height: 46px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18);">
+              <span class="fw-bold">LK</span>
+            </div>
+            <div>
+              <div class="fw-bold">Leadership Kaleidoscope</div>
+              <div style="color: rgba(255,255,255,0.75)">A Best Life LLC Company</div>
+            </div>
+          </div>
+          <div class="mt-3" style="color: rgba(255,255,255,0.75)">Discovery-first leadership development for Midwest organizations.</div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="fw-bold mb-2">Links</div>
+          <ul class="list-unstyled mb-0" style="color: rgba(255,255,255,0.85)">
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#/home">Home</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#/approach">Approach</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <div class="fw-bold mb-2">Start here</div>
+          <div style="color: rgba(255,255,255,0.75)">Schedule a complimentary 30-minute discovery call.</div>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn-secondary-custom" href="#/contact">Schedule a discovery call</a>
+            <a class="btn btn-outline-light" href="#/contact">Schedule a consultation</a>
+          </div>
+          <div class="mt-3" style="color: rgba(255,255,255,0.75)">Email: terri@leadershipkaleidoscope.com</div>
+        </div>
+      </div>
+
+      <hr class="my-4" style="border-color: rgba(255,255,255,0.12)" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2" style="color: rgba(255,255,255,0.75)">
+        <div>© 2026 Best Life LLC. All rights reserved.</div>
+        <div class="small">Home page photos: Unsplash License. Sources: https://unsplash.com/photos/7mgkmRY4ZLM</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Simple hash router to simulate three pages in one file.
+    // No ampersands in comments.
+    (function () {
+      const pages = Array.from(document.querySelectorAll("[data-page]"));
+      const navLinks = Array.from(document.querySelectorAll(".navbar [data-route]"));
+      const metaDescription = document.getElementById("metaDescription");
+
+      const routes = {
+        home: {
+          title: "Leadership Kaleidoscope | Leadership Training and Coaching",
+          description: "Leadership development for Midwest organizations. We start with discovery to identify what will benefit your organization most, then design coaching, training, and team development that fits your business stage."
+        },
+        approach: {
+          title: "Approach | Leadership Kaleidoscope",
+          description: "Our discovery-first approach: we learn your organization, design the best-fit leadership plan, then deliver coaching, workshops, and team development for measurable results."
+        },
+        contact: {
+          title: "Contact | Leadership Kaleidoscope",
+          description: "Schedule a complimentary 30-minute discovery call. Tell us your goals and challenges, and receive a tailored recommendation for next steps."
+        }
+      };
+
+      function getRoute() {
+        const hash = window.location.hash || "#/home";
+        const route = hash.replace("#/", "").split("?")[0];
+        if (routes[route]) return route;
+        return "home";
+      }
+
+      function setActive(route) {
+        pages.forEach(p => p.classList.toggle("is-active", p.getAttribute("data-page") === route));
+        navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("data-route") === route));
+
+        const meta = routes[route] || routes.home;
+        document.title = meta.title;
+        if (metaDescription) metaDescription.setAttribute("content", meta.description);
+
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+
+      window.addEventListener("hashchange", () => setActive(getRoute()));
+
+      if (!window.location.hash || window.location.hash === "#") {
+        window.location.hash = "#/home";
+      }
+      setActive(getRoute());
+    })();
+  </script>
+</body>
+</html>
